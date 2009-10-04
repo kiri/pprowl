@@ -1,0 +1,12 @@
+--- 
+:prowl:
+  :apikey: your-prowl-apikey
+:applications:
+  - :application: Gmail
+    :config: 
+      :username: gmail-id@gmail.com
+      :password: gmail-password
+  - :application: Twitter
+    :config: 
+      :username: twitter-id
+      :password: twitter-password
