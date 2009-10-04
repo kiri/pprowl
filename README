@@ -1,0 +1,29 @@
+PProwl 
+What is PProwl? PProwl is a script for Prowl to send a message just one time.
+What is Prowl? See <http://prowl.weks.net/>
+
+Directory
+ prowl/
+       pprowl-gmail.rb
+       pprowl-twitter-mensions.rb
+       pprowl-twitter-messages.rb
+       sample-config.yaml (rename config.yaml and configurate with your id, passwd)
+       lib/
+           pprowl.rb
+           pprowlconfig.rb
+       db/
+           (empty)
+
+RubyGem
+ - prowl
+ - json
+ - feed-normalizer
+ - dm-core
+ - dm-validations
+
+Example
+$ crontab -l
+*/5 * * * * /usr/local/pprowl/pprowl-gmail.rb
+*/3 * * * * /usr/local/pprowl/pprowl-twitter-mensions.rb
+*/5 * * * * /usr/local/pprowl/pprowl-twitter-messages.rb
+
